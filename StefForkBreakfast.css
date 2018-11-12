@@ -1,0 +1,198 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+/*
+
+css for header
+
+*/
+
+.div4logo {
+	width: 100%;
+}
+
+.div4logo-href {
+	text-decoration: none;
+	color: black;
+}
+
+
+.breakfastLogo {
+	width: 190px;
+	margin: 6px auto;
+	padding: 0 6px;
+}
+
+
+/*  АРКАДИЙ: THE BEGINING; */
+
+
+body {
+	width: 99%;
+	box-sizing: border-box;
+}
+
+main {
+	display: flex;
+	box-sizing: border-box;
+	/*width: 80%;*/
+	overflow: hidden;
+	flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  margin-left: 210px;
+}
+
+.wallpaper {
+
+	box-sizing: border-box;
+	position: relative;
+	/*overflow: hidden;*/
+	width: 100%;
+	}
+
+.wall_img {
+	display: block;
+	box-sizing: border-box;
+	height: auto;
+	width: 100%;
+	height: auto;
+
+}
+
+.heading_box {
+	position: absolute;
+	box-sizing: border-box;
+	bottom: 10%;
+	left: 10%;
+	color: white;
+	font-size: 2vw;
+	font-family: helvetica;
+
+
+}
+
+.description {
+	position: relative;
+
+}
+
+
+/*  АРКАДИЙ: THE END; */
+
+
+/*
+
+css for middle section
+
+*/
+
+
+.navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 190px;
+}
+
+.middle-section {
+	list-style-type: none;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	border-top: 1px solid #d9d9d9;
+}
+
+.middle-section-item {
+	font-size: 20px;
+	letter-spacing: 1px;
+	height: 60px;
+	border-bottom: 1px solid #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.middle-section-item-href {
+	text-decoration: none;
+	color: black;
+}
+
+/*
+
+css for footer
+
+*/
+
+footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 10px;
+}
+
+.socials {
+	display: inline-block;
+}
+
+.contacts {
+    margin: 10px auto 5px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fa {
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  padding: 7px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #8e8b8b;
+  color: white;
+}
+
+.fa-instagram {
+  background: #8e8b8b;
+  color: white;
+}
+
+.reserve {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reserve_item {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+}
+
+
+.reserve_href {
+	text-decoration: none;
+	color: #4f4e4e;
+	display: flex;
+	align-items: center;
+	height: 15px;
+}
+
+.icon-clock {
+	width: 15px;
+	margin-right: 8px;
+}
