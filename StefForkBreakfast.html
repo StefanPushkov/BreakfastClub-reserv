@@ -4,6 +4,7 @@
     <title>И.П. Зыкова</title>
     <link rel="stylesheet" href="StefForkBreakfast.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
   <nav class="navbar">
@@ -14,9 +15,16 @@
     		</a>
     	</div>
     </header>
+     <section class="sub-menu">
+            <ul class="adresses">
+                <li class="sub-menu-items">1-я линиия ВО, 42</li>
+                <li class="sub-menu-items">Сапёрный переулок, 15</li>
+                <li class="sub-menu-items">Итальянская улица, 16/19</li>
+            </ul>
+    </section>
     <div>
     	<ul class="middle-section">
-    		<li class="middle-section-item">
+    		<li class="middle-section-item" id="our-rest">
     			<a href="" class="middle-section-item-href">Our restaurants</a>
     		</li>
     		<li class="middle-section-item">
@@ -54,13 +62,29 @@
 
 
   <main>
+    
     <div class="wallpaper">
       <img src="main_wall.jpg" alt="Luxury fried egg" class="wall_img">
       <div class="heading_box">
-        <h1>Breakfast Club</h1>
+        <div class="overlay"></div>
+        <h1>Coffee & Breakfast</h1>
         <h2>И.П. Зыкова</h2>
       </div>
     </div>
+    <section class="articles">
+        <a href="" class="item">
+          <img src="бенедикт.jpg" alt="бенедикт" class="itemImg">
+        </a>
+        <a href="" class="item">
+          <img src="сырники.jpg" alt="сырники" class="itemImg"> 
+        </a>
+        <a href="" class="item">
+            <img src="coffee.jpg" alt="кофе" class="itemImg">
+        </a>
+        <a href="" class="item">
+            <img src="английский.jpg" alt="english breakfast" class="itemImg">
+        </a>
+    </section>
     <div class="description">
       Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
 
@@ -73,7 +97,6 @@ https://momofuku.com/
   <!-- АРКАДИЙ: THE END -->
 
   </nav>
-    <main></main>
   <script type="text/javascript" src="StefForkBreakfast.js"></script>
 </body>
 </html>

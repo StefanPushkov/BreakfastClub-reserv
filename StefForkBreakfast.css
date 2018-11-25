@@ -22,65 +22,122 @@ css for header
 
 
 .breakfastLogo {
-	width: 190px;
-	margin: 6px auto;
-	padding: 0 6px;
+	width: 210px;
+	margin: 12px auto;
+	padding: 0 12px;
 }
 
 
 /*  АРКАДИЙ: THE BEGINING; */
 
 
-body {
+/*body {
 	width: 99%;
 	box-sizing: border-box;
-}
+}*/
 
 main {
 	display: flex;
-	box-sizing: border-box;
-	/*width: 80%;*/
 	overflow: hidden;
 	flex-wrap: wrap;
-  position: absolute;
-  right: 0;
-  margin-left: 210px;
+  	position: relative;
+  	margin-left: 210px;
 }
+
+/*
+*
+*
+** Sub-menu
+*
+*
+*/
+
+.sub-menu {
+	position: fixed;
+	z-index:101;
+    top: 0px;
+    left: -400px;
+    width: 320px;
+    padding: 40px;
+    min-height: 100%;
+    background-image: url('зал.jpg')
+}
+
+.left-right {
+	left: 210px;
+}
+
+.adresses {
+	list-style-type: none;
+}
+
+/*
+*
+*
+** Main walls
+*
+*
+*/
 
 .wallpaper {
-
-	box-sizing: border-box;
-	position: relative;
-	/*overflow: hidden;*/
 	width: 100%;
-	}
+	position: relative;
+}
 
 .wall_img {
-	display: block;
-	box-sizing: border-box;
-	height: auto;
+	position: relative;
 	width: 100%;
-	height: auto;
-
+	background-size: cover;
+	height: 625px;
 }
+
+
 
 .heading_box {
 	position: absolute;
-	box-sizing: border-box;
-	bottom: 10%;
-	left: 10%;
+	padding-bottom: 5%;
+	padding-left: 6%;
+	width: 75%;
 	color: white;
 	font-size: 2vw;
 	font-family: helvetica;
+	bottom: 0px;
 
 
 }
 
+/*Stefan's part*/
+.articles {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.item {
+	width: 50%;
+}
+
+
+
+.itemImg {
+	width: 100%;
+	padding: 1px;
+}
+.itemImg {
+	display: block;
+	/*
+    transition: all .25s;
+    background: rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 0 15px white; */
+}
+/*the end of Stefan's part*/
+/*
 .description {
 	position: relative;
 
 }
-
+*/
 
 /*  АРКАДИЙ: THE END; */
 
@@ -97,7 +154,8 @@ css for middle section
 	top: 0px;
 	left: 0px;
 	height: 100vh;
-	width: 190px;
+	width: 210px;
+	z-index: 9999;
 }
 
 .middle-section {
@@ -133,7 +191,7 @@ footer {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	margin-bottom: 10px;
+	margin-bottom: 25px;
 }
 
 .socials {
