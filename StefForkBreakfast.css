@@ -4,10 +4,29 @@
 	box-sizing: border-box;
 }
 
+/* NAVBAR */
+/*---------------------------------------------------*/
+
+.navbar {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100vh;
+	width: 210px;
+	z-index: 9999;
+}
+
+.first-level {
+	position: fixed;
+	min-height: 100vh;
+	z-index: 103;
+	left: 0;
+	background-color: white;
+}
 
 /*
 
-css for header
+ header NAVBAR
 
 */
 
@@ -28,134 +47,60 @@ css for header
 }
 
 
-/*  АРКАДИЙ: THE BEGINING; */
-
-
-/*body {
-	width: 99%;
-	box-sizing: border-box;
-}*/
-
-main {
-	display: flex;
-	overflow: hidden;
-	flex-wrap: wrap;
-  	position: relative;
-  	margin-left: 210px;
-}
-
 /*
-*
-*
-** Sub-menu
-*
-*
+
+ sub-menu NAVBAR
+
 */
 
-.sub-menu {
+.second-level {
 	position: fixed;
 	z-index:101;
     top: 0px;
-    left: -400px;
+    left: -320px;
     width: 320px;
     padding: 40px;
     min-height: 100%;
-    background-image: url('зал.jpg')
+    background: black;
+    -webkit-transition: all 0.7s ease;
 }
+
+
+.second-levelX {
+	position: fixed;
+	z-index:101;
+    top: 0px;
+    left: -320px;
+    width: 320px;
+    padding: 40px;
+    min-height: 100%;
+    background: black;
+    -webkit-transition: all 0.7s ease;
+}
+
 
 .left-right {
+
 	left: 210px;
+	-webkit-transition: all 0.5s ease;
 }
 
-.adresses {
+
+.sub-menu-items {
+	color: white;
+	text-decoration: none;
 	list-style-type: none;
 }
 
-/*
-*
-*
-** Main walls
-*
-*
-*/
-
-.wallpaper {
-	width: 100%;
-	position: relative;
-}
-
-.wall_img {
-	position: relative;
-	width: 100%;
-	background-size: cover;
-	height: 625px;
-}
-
-
-
-.heading_box {
-	position: absolute;
-	padding-bottom: 5%;
-	padding-left: 6%;
-	width: 75%;
-	color: white;
-	font-size: 2vw;
-	font-family: helvetica;
-	bottom: 0px;
-
-
-}
-
-/*Stefan's part*/
-.articles {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-}
-
-
-.item {
-	width: 50%;
-}
-
-
-
-.itemImg {
-	width: 100%;
-	padding: 1px;
-}
-.itemImg {
-	display: block;
-	/*
-    transition: all .25s;
-    background: rgba(0, 0, 0, 0.5);
-	box-shadow: inset 0 0 0 15px white; */
-}
-/*the end of Stefan's part*/
-/*
-.description {
-	position: relative;
-
-}
-*/
-
-/*  АРКАДИЙ: THE END; */
-
 
 /*
 
-css for middle section
+ middle section NAVBAR
 
 */
 
-
-.navbar {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	height: 100vh;
-	width: 210px;
-	z-index: 9999;
+.navbar-middle-section {
+	/*z-index: 102;*/
 }
 
 .middle-section {
@@ -183,7 +128,7 @@ css for middle section
 
 /*
 
-css for footer
+ footer NAVBAR
 
 */
 
@@ -192,6 +137,10 @@ footer {
 	position: absolute;
 	bottom: 0;
 	margin-bottom: 25px;
+}
+
+.navbar-footer {
+	/*z-index: 102;*/
 }
 
 .socials {
@@ -254,3 +203,86 @@ footer {
 	width: 15px;
 	margin-right: 8px;
 }
+
+
+
+
+
+
+/* BODY */
+/*-----------------------------------------------------------*/
+
+/*  АРКАДИЙ: THE BEGINING; */
+
+
+
+main {
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+  	position: relative;
+  	margin-left: 210px;
+}
+
+/*
+
+ main walls BODY
+
+*/
+
+.wallpaper {
+	width: 100%;
+	position: relative;
+}
+
+.wall_img {
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	height: 625px;
+}
+
+
+
+.heading_box {
+	position: absolute;
+	padding-bottom: 5%;
+	padding-left: 6%;
+	width: 75%;
+	color: white;
+	font-size: 2vw;
+	font-family: helvetica;
+	bottom: 0px;
+
+
+}
+
+/*Stefan's part*/
+.articles {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.item {
+	width: 50%;
+}
+
+
+
+.itemImg {
+	width: 100%;
+	padding: 1px;
+}
+.itemImg {
+	display: block;
+	/*
+    transition: all .25s;
+    background: rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0 0 0 15px white; */
+}
+/*the end of Stefan's part*/
+
+
+/*  АРКАДИЙ: THE END; */
