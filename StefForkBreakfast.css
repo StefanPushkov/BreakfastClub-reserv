@@ -248,7 +248,7 @@ main {
 	position: relative;
 	overflow: hidden;
 	transition: all 0.15s ease-out;
-	background-image: url(main_wall.jpg);
+	background-image: url(img/main_wall.jpg);
 	height: 625px;
 	background-size: cover;
     background-repeat: no-repeat;
@@ -337,7 +337,7 @@ h1 {
 	width: 100%;
 	padding: 1px;
 	display: block;
-	background-image: url(бенедикт.jpg);
+	background-image: url(img/бенедикт.jpg);
 	height: 380px;
 	background-size: cover;
     background-position: center center;
@@ -350,7 +350,7 @@ h1 {
 	width: 100%;
 	padding: 1px;
 	display: block;
-	background-image: url(сырники.jpg);
+	background-image: url(img/сырники.jpg);
 	height: 380px;
 	background-size: cover;
     background-position: center center;
@@ -364,7 +364,7 @@ h1 {
 	width: 100%;
 	padding: 1px;
 	display: block;
-	background-image: url(coffee.jpg);
+	background-image: url(img/coffee.jpg);
 	height: 380px;
 	background-size: cover;
     background-position: center center;
@@ -377,7 +377,7 @@ h1 {
 	width: 100%;
 	padding: 1px;
 	display: block;
-	background-image: url(английский.jpg);
+	background-image: url(img/английский.jpg);
 	height: 380px;
 	background-size: cover;
     background-position: center center;
