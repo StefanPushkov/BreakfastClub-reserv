@@ -22,6 +22,8 @@
 	z-index: 103;
 	left: 0;
 	background-color: white;
+    border-right: 1px solid #d9d9d9;
+    -webkit-box-shadow: 0 0 16px -6px #000000;
 }
 
 /*
@@ -63,6 +65,9 @@
     min-height: 100%;
     background: black;
     -webkit-transition: all 0.7s ease;
+    font-size: 17px;
+    letter-spacing: 1px;
+	line-height: 26px;
 }
 
 
@@ -76,6 +81,9 @@
     min-height: 100%;
     background: black;
     -webkit-transition: all 0.7s ease;
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 26px;
 }
 
 
@@ -230,17 +238,33 @@ main {
 
 */
 
-.wallpaper {
+.wall_img {
 	width: 100%;
-	position: relative;
+	overflow: hidden;
 }
 
-.wall_img {
+.wall {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.15s ease-out;
+	background-image: url(main_wall.jpg);
+	height: 625px;
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wall_img:hover > .wall {
+	transform: scale(0.95);
+	opacity: 0.8;
+}
+
+/*.wall_img {
 	position: relative;
 	width: 100%;
 	background-size: cover;
 	height: 625px;
-}
+}*/
 
 
 
@@ -264,24 +288,114 @@ main {
 	flex-wrap: wrap;
 }
 
+h1 {
+	font-size: 41px;
+}
+
 
 .item {
 	width: 50%;
+	overflow: hidden;
+	text-decoration: none;
+	position: relative;
+}
+
+.item:hover > .itemImg1 {
+	/*display: none;*/
+	transform: scale(0.9);
+	opacity: 0.8;
+}
+
+.item:hover > .itemImg2 {
+	/*display: none;*/
+	transform: scale(0.9);
+	opacity: 0.8;
+    /*box-shadow: inset 0 0 0 0 white;
+    background-repeat: repeat;*/
+}
+
+.item:hover > .itemImg3 {
+	/*display: none;*/
+	transform: scale(0.9);
+	opacity: 0.8;
+    /*box-shadow: inset 0 0 0 0 white;
+    background-repeat: repeat;*/
+}
+
+
+.item:hover > .itemImg4 {
+	/*display: none;*/
+	transform: scale(0.9);
+	opacity: 0.8;
+    /*box-shadow: inset 0 0 0 0 white;
+    background-repeat: repeat;*/
 }
 
 
 
-.itemImg {
+.itemImg1 {
 	width: 100%;
 	padding: 1px;
-}
-.itemImg {
 	display: block;
-	/*
-    transition: all .25s;
-    background: rgba(0, 0, 0, 0.5);
-	box-shadow: inset 0 0 0 15px white; */
+	background-image: url(бенедикт.jpg);
+	height: 380px;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 1px;
+    overflow: hidden;
+    transition: all 0.15s ease-out;
 }
+.itemImg2 {
+	width: 100%;
+	padding: 1px;
+	display: block;
+	background-image: url(сырники.jpg);
+	height: 380px;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 1px;
+    overflow: hidden;
+    transition: all 0.15s ease-out;
+
+}
+.itemImg3 {
+	width: 100%;
+	padding: 1px;
+	display: block;
+	background-image: url(coffee.jpg);
+	height: 380px;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 1px;
+    overflow: hidden;
+    transition: all 0.15s ease-out;    
+}
+.itemImg4 {
+	width: 100%;
+	padding: 1px;
+	display: block;
+	background-image: url(английский.jpg);
+	height: 380px;
+	background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 1px;
+    overflow: hidden;
+    transition: all 0.15s ease-out;    
+}
+
+.info {
+	position: absolute;
+    color: white;
+    width: 100%;
+    text-transform: initial;
+    padding: 70px 60px;
+    bottom: 0;
+}
+
 /*the end of Stefan's part*/
 
 
